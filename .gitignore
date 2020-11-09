@@ -5,6 +5,6 @@
 *.iws
 
 ### Folders
-.gradle/
-.idea/
-build/
+.gradle/*
+.idea/*
+build/*
