@@ -1,6 +1,9 @@
 plugins {
     id 'java'
+    id "application"
 }
+
+apply plugin : "java"
 
 group 'org.example'
 version '1.0-SNAPSHOT'
@@ -12,4 +15,14 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile "org.javatuples:javatuples:1.2"
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+//    compile "org.seleniumhq.selenium:selenium-remote-driver:3.6.0"
+//    compile "org.seleniumhq.selenium:selenium-chrome-driver:3.141.59"
+    //Webdriver updated
+    compile("io.github.bonigarcia:webdrivermanager:4.2.0")
 }
+
+application {
+    mainClassName = "maria.viyuela.MainClass"
+}
+
